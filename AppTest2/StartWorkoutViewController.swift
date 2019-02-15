@@ -19,9 +19,11 @@ class StartWorkoutViewController: UIViewController, UITableViewDataSource, UITab
     
     override func viewDidLoad() {
         super.viewDidLoad()
+       
         
         tableView.dataSource = self
         tableView.delegate = self
+    
         
     }
     
@@ -44,6 +46,14 @@ class StartWorkoutViewController: UIViewController, UITableViewDataSource, UITab
         print("Cell")
         return cell1
     }
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        
+        return 200
+    }
+    
+    
+
     
    
 }
