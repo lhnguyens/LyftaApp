@@ -35,12 +35,11 @@ class WorkoutViewController: UIViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "start"{
             if let destVC = segue.destination as? StartWorkoutViewController {
-                destVC.dataForEachExcersise = dataInfo
+                destVC.dataOfExcersises = dataInfo
+                }
             }
         }
     }
     
     
-    
-    
-}
+

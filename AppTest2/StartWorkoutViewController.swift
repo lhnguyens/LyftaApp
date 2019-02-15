@@ -8,37 +8,43 @@
 
 import UIKit
 
-class StartWorkoutViewController: UITableViewController {
+class StartWorkoutViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
-    var dataForEachExcersise: DataInfo?
-    var targetData:[CellData] = []
+    var dataOfExcersises: DataInfo?
     
     
-    @IBOutlet weak var nameOfTheExcersise: UILabel!
-    @IBOutlet weak var setsLabel: UILabel!
-    @IBOutlet weak var repsLabel: UILabel!
-    @IBOutlet weak var whichSetsLabel: UILabel!
-    @IBOutlet weak var repsRangeLabel: UILabel!
+    @IBOutlet weak var tableView: UITableView!
+    
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-       
-    }
-
-
-
-    override func numberOfSections(in tableView: UITableView) -> Int {
-       
-        return dataForEachExcersise!.exerC!.count
-    }
-
-    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-       
-        return 0
-    }
-
-    @IBAction func moreInfoAboutExcersise(_ sender: Any) {
+        
+        tableView.dataSource = self
+        tableView.delegate = self
+        
     }
     
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        if let data = dataOfExcersises?.exerC{
+            print(data.count)
+            return data.count
+        }
+      
+        return 0
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+       let data1 = dataOfExcersises?.exerC![indexPath.row]
+        let cell1 = tableView.dequeueReusableCell(withIdentifier: "startWorkoutCell") as! StartWorkoutCell
+        if let data = data1 {
+            cell1.setStructureForExcersise(data: data)
+        }
+        print("Cell")
+        return cell1
+    }
+    
+   
 }
+

@@ -68,7 +68,7 @@ class MenuController: UIViewController, UITableViewDataSource,UITableViewDelegat
         
         if segue.identifier == "segueToOverview"{
             if let destVC = segue.destination as? WorkoutViewController {
-                destVC.dataInfo =  imagesMenu[myIndex]//arrayTable
+                destVC.dataInfo =  imagesMenu[myIndex]
             }
         }
     }
