@@ -24,9 +24,9 @@ class PplButton: UIButton {
     
     
     private func setupButton() {
-        backgroundColor     =  UIColor(red: 224/255.0, green: 210/255.0, blue: 187/255.0, alpha: 1)
+        backgroundColor     =  UIColor(red: 231.0/255, green: 0.0/255, blue: 65.0/255, alpha: 1.0)
         layer.cornerRadius  = frame.size.height/2
-        setTitleColor(.black, for: .normal)
+        setTitleColor(.white, for: .normal)
         
         
     }

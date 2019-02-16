@@ -59,7 +59,9 @@ class MenuController: UIViewController, UITableViewDataSource,UITableViewDelegat
         tableView.delegate = self
         tableView.dataSource = self
         
-        
+        navigationController?.navigationBar.prefersLargeTitles = true
+        navigationController?.navigationBar.barTintColor = UIColor(red: 231.0/255, green: 0.0/255, blue: 65.0/255, alpha: 1.0)
+                
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
