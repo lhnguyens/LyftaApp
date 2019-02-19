@@ -27,7 +27,7 @@ class StartWorkoutViewController: UIViewController, UITableViewDataSource, UITab
         
         
     }
-  
+    
     
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -59,13 +59,23 @@ class StartWorkoutViewController: UIViewController, UITableViewDataSource, UITab
     }
     
     @objc func checkMarkButtonClicked (sender: UIButton) {
+        //Testa button om den registeras
         print("button pressed")
         
-        if sender.isSelected {
-            sender.isSelected = false
-        } else {
-            sender.isSelected = true
+        UIView.animate(withDuration: 0.3, delay: 0.1, options: .curveEaseInOut, animations: {
+            sender.transform = CGAffineTransform(scaleX: 0.1, y: 0.1)
+        }) { (success) in
+            sender.isSelected = !sender.isSelected
+            UIView.animate(withDuration: 0.3, delay: 0.1, options: .curveEaseInOut, animations: {
+                sender.transform = .identity
+            }, completion: nil)
         }
+        
+//        if sender.isSelected {
+//            sender.isSelected = false
+//        } else {
+//            sender.isSelected = true
+//        }
     }
     
     

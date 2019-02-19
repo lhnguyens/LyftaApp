@@ -12,7 +12,7 @@ import UIKit
 
 
 class MenuController: UIViewController, UITableViewDataSource,UITableViewDelegate {
-
+    
     var pushExcersisesArray: [Exercises] = [
         Exercises(name: "Barbell Bench Press", sets: "3", reps: "4"),
         Exercises(name: "Dumbell Seated Shoulder Press", sets: "3", reps: "8-10"),
@@ -61,7 +61,7 @@ class MenuController: UIViewController, UITableViewDataSource,UITableViewDelegat
         
         navigationController?.navigationBar.prefersLargeTitles = true
         navigationController?.navigationBar.barTintColor = UIColor(red: 231.0/255, green: 0.0/255, blue: 65.0/255, alpha: 1.0)
-                
+        
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {

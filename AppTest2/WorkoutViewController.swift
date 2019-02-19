@@ -20,13 +20,13 @@ class WorkoutViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setWorkoutImage()
-       
-       
+        
+        
         
     }
     
     func setWorkoutImage(){
-     //   var picture: String = imageName?.description
+        //   var picture: String = imageName?.description
         
         if let data = dataInfo {
             workoutOverviewImage.image = UIImage(named: data.overviewImageName!)
@@ -37,10 +37,10 @@ class WorkoutViewController: UIViewController {
         if segue.identifier == "start"{
             if let destVC = segue.destination as? StartWorkoutViewController {
                 destVC.dataOfExcersises = dataInfo
-                }
             }
         }
     }
-    
-    
+}
+
+
 

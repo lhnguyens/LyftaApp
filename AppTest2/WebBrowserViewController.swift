@@ -17,7 +17,7 @@ class WebBrowserViewController: UIViewController, WKNavigationDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let url = URL(string: "https://www.jefit.com/exercises")!
+        let url = URL(string: "https://airtable.com/shrKZ9lPpw7EvjZ3X/tblvscpkbagqlWKkH?blocks=hide")!
         webView2.load(URLRequest(url: url))
         webView2.allowsBackForwardNavigationGestures = true
 
