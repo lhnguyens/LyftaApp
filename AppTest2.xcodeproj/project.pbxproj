@@ -117,11 +117,9 @@
 		0F442B2921F0BBFF003A2A5A /* AppTest2 */ = {
 			isa = PBXGroup;
 			children = (
-				0F442B2A21F0BBFF003A2A5A /* AppDelegate.swift */,
-				0F442B2E21F0BBFF003A2A5A /* Main.storyboard */,
 				0F442B3121F0BC00003A2A5A /* Assets.xcassets */,
 				0F442B3321F0BC00003A2A5A /* LaunchScreen.storyboard */,
-				0F442B3621F0BC00003A2A5A /* Info.plist */,
+				0F442B2E21F0BBFF003A2A5A /* Main.storyboard */,
 				0F442B2C21F0BBFF003A2A5A /* ViewController.swift */,
 				0F72CF1E21F490FB008DDFE8 /* MenuController.swift */,
 				0FDC880C220949CA00F17E99 /* WorkoutViewController.swift */,
@@ -133,6 +131,8 @@
 				0FDC880E2209BD2D00F17E99 /* WorkoutInfo.swift */,
 				0F0F84F62212CB670068C81B /* CellData.swift */,
 				0F72CF1C21F48610008DDFE8 /* PplButton.swift */,
+				0F442B3621F0BC00003A2A5A /* Info.plist */,
+				0F442B2A21F0BBFF003A2A5A /* AppDelegate.swift */,
 			);
 			path = AppTest2;
 			sourceTree = "<group>";
