@@ -10,7 +10,7 @@ import UIKit
 
 class StartWorkoutCell : UITableViewCell {
     
-
+    
     @IBOutlet weak var labelForEachExcersise: UILabel!
     @IBOutlet weak var infoButton: UIButton!
     @IBOutlet weak var setsLabel: UILabel!
@@ -28,16 +28,16 @@ class StartWorkoutCell : UITableViewCell {
         repsLabel.text = "REPS"
         whichSets.text = data.sets
         setLabelToWhite()
-       
-       
+        
+        
     }
     
     func setLabelToWhite() {
         labelForEachExcersise.textColor = UIColor.white
     }
     
-
-   
+    
+    
     
     
     
