@@ -18,13 +18,28 @@ class StartWorkoutCell : UITableViewCell {
     @IBOutlet weak var repsRangeLabel: UILabel!
     @IBOutlet weak var whichSets: UILabel!
     
+    
+    @IBOutlet weak var checkBoxButton: UIButton!
+    
     func setStructureForExcersise(data: Exercises){
         labelForEachExcersise.text = data.name
         repsRangeLabel.text = data.reps
         setsLabel.text = "SETS"
         repsLabel.text = "REPS"
         whichSets.text = data.sets
-        
+        setLabelToWhite()
+       
+       
     }
+    
+    func setLabelToWhite() {
+        labelForEachExcersise.textColor = UIColor.white
+    }
+    
+
+   
+    
+    
+    
     
 }

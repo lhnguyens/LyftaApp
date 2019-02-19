@@ -17,8 +17,8 @@ class MenuController: UIViewController, UITableViewDataSource,UITableViewDelegat
         Exercises(name: "Barbell Bench Press", sets: "3", reps: "4"),
         Exercises(name: "Dumbell Seated Shoulder Press", sets: "3", reps: "8-10"),
         Exercises(name: "Weighted Dip", sets: "3", reps: "6-10"),
-        Exercises(name: "Low-to-high cable flye", sets: "3", reps: "12-15" ),
-        Exercises(name: "Dumbell isolateral skull crusher", sets: "3", reps: "12"),
+        Exercises(name: "Low-to-high Cable Flye", sets: "3", reps: "12-15" ),
+        Exercises(name: "Dumbell Isolateral Skull Crusher", sets: "3", reps: "12"),
         Exercises(name: "Dumbell Lateral Raise", sets: "3", reps: "15"),
         Exercises(name: "Ab Wheel Rollout", sets: "3", reps: "6")
     ]

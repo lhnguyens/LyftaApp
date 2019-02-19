@@ -21,6 +21,7 @@ class WorkoutViewController: UIViewController {
         super.viewDidLoad()
         setWorkoutImage()
        
+       
         
     }
     
