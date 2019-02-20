@@ -15,20 +15,11 @@ class StartWorkoutViewController: UIViewController, UITableViewDataSource, UITab
     
     @IBOutlet weak var tableView: UITableView!
     
-    
-    
-    
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        
         tableView.dataSource = self
         tableView.delegate = self
-        
-        
     }
-    
-    
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         if let data = dataOfExcersises?.exerC{
@@ -40,7 +31,7 @@ class StartWorkoutViewController: UIViewController, UITableViewDataSource, UITab
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-       
+        
         let data1 = dataOfExcersises?.exerC![indexPath.row]
         let cell1 = tableView.dequeueReusableCell(withIdentifier: "startWorkoutCell") as! StartWorkoutCell
         if let data = data1 {
@@ -48,22 +39,9 @@ class StartWorkoutViewController: UIViewController, UITableViewDataSource, UITab
             cell1.selectionStyle = .none
             cell1.checkBoxButton.tag = indexPath.row
             cell1.checkBoxButton.addTarget(self, action: #selector(checkMarkButtonClicked(sender: )), for: .touchUpInside)
-            
         }
-//        if data1?.checked == true && cell1.checkBoxButton.isSelected {
-//            let alert = UIAlertController(title: "Workout Completed", message: "Go Drink and Eat!" , preferredStyle: .alert)
-//            alert.addAction(UIAlertAction(title: "Yes", style: .default, handler: {
-//                (_)in
-//                self.performSegue(withIdentifier: "unwindToMenu", sender: self)
-//            }))
-//
-//            self.present(alert, animated: true, completion: nil)
-//
-//        }
         
         return cell1
-        
-    
         
     }
     
@@ -92,8 +70,8 @@ class StartWorkoutViewController: UIViewController, UITableViewDataSource, UITab
             }
         }
         
-        let alert = UIAlertController(title: "Workout Completed", message: "Go Drink and Eat!" , preferredStyle: .alert)
-        alert.addAction(UIAlertAction(title: "Yes", style: .default, handler: {
+        let alert = UIAlertController(title: "Workout Completed".localized, message: "Well Done, See You soon!".localized , preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: "Yes".localized, style: .default, handler: {
             (_)in
             self.performSegue(withIdentifier: "unwindToMenu", sender: self)
         }))

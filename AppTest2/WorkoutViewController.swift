@@ -12,7 +12,7 @@ class WorkoutViewController: UIViewController {
     
     
     
-    var dataInfo : DataInfo? //String //[DataInfo]
+    var dataInfo : DataInfo? 
     @IBOutlet weak var textLabel: UILabel!
     @IBOutlet weak var workoutOverviewImage: UIImageView!
     
@@ -26,7 +26,7 @@ class WorkoutViewController: UIViewController {
     }
     
     func setWorkoutImage(){
-        //   var picture: String = imageName?.description
+        
         
         if let data = dataInfo {
             workoutOverviewImage.image = UIImage(named: data.overviewImageName!)
