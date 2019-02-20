@@ -1,0 +1,46 @@
+/* 
+  Localizable.strings
+  AppTest2
+
+  Created by Luan Nguyen on 2019-02-20.
+  Copyright © 2019 Luan Nguyen. All rights reserved.
+*/
+"Push Workout" = "Push Rutin";
+"Pull Workout" = "Pull Rutin";
+"Leg Workout" = "Ben Rutin";
+
+
+
+//Push
+
+"Barbell Bench Press" = "Bänk Press ";
+"Dumbell Seated Shoulder Press" = "Axelpress med hantlar";
+"Weighted Dip" = "Barr Press";
+"Low-to-high Cable Flye" = "Låg-till-hög Kabel Flyes";
+"Dumbell Isolateral Skull Crusher" = "Isolerad Tricep Press";
+"Dumbell Lateral Raise" = "Hantel Lyft åt sidan";
+"Ab Wheel Rollout" = "Maghjul";
+
+
+//Pull
+
+"1 Arm Lat Pull-in" = "1 Arm Lats Drag med Kabel";
+"Pull-up" = "Räckhäv";
+"Pendlay Row" = "Rådd med Skivstång";
+"Machine High Row" = "Hög Maskinrodd";
+"Seated Face Pull" = "Sittande Ansisktsdrag";
+"Reverse Grip Ez Bar Curl" = "Omvänd Curl med Ez Bar";
+"Supinated Ez Bar Curl" = "Supinerad Curl med Ez Bar";
+"Dumbell Preacher Curl" = "Hantel Preacher Curl";
+
+
+//Legs
+
+"Back Squat" = "Knä Böj";
+"Deadlift" = "Marklyft";
+"Barbell Hip Thrust" = "Skivstång Hip Thrust";
+"Dumbell Walking Lunge" = "Gåenda utfall med hantel";
+"Leg Extension" = "Ben Spark med Maskin";
+"Seated Leg Curl" = "Sittande Ben Curl Maskin";
+"Standing Calf Raises" = "Stående Vadpress";
+

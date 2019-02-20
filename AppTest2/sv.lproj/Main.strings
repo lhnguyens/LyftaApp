@@ -1,0 +1,42 @@
+
+/* Class = "UILabel"; text = "OVERVIEW"; ObjectID = "5y9-Jg-HWY"; */
+"5y9-Jg-HWY.text" = "Översikt";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "G3H-S1-LbI"; */
+"G3H-S1-LbI.text" = "Label";
+
+/* Class = "UILabel"; text = "Excersise"; ObjectID = "H5C-WB-YPp"; */
+"H5C-WB-YPp.text" = "Övning";
+
+/* Class = "UILabel"; text = "12-15"; ObjectID = "NAp-oW-R9S"; */
+"NAp-oW-R9S.text" = "12-15";
+
+/* Class = "UIButton"; normalTitle = "Start Lifting!"; ObjectID = "RVU-1j-sp4"; */
+"RVU-1j-sp4.normalTitle" = "Börja Lyfta!";
+
+/* Class = "UILabel"; text = "REPS"; ObjectID = "So7-3Z-ecn"; */
+"So7-3Z-ecn.text" = "REPS";
+
+/* Class = "UIBarButtonItem"; title = "Go Back"; ObjectID = "UR1-v8-hJS"; */
+"UR1-v8-hJS.title" = "Backa";
+
+/* Class = "UILabel"; text = "PPL Routine"; ObjectID = "VRA-pP-2cH"; */
+"VRA-pP-2cH.text" = "PPL Rutin";
+
+/* Class = "UINavigationItem"; title = "Search Workout"; ObjectID = "fQg-1u-6zh"; */
+"fQg-1u-6zh.title" = "Hitta Övning";
+
+/* Class = "UILabel"; text = "Workout Tracker"; ObjectID = "gQG-Fh-c09"; */
+"gQG-Fh-c09.text" = "Tränings Logg";
+
+/* Class = "UILabel"; text = "SET"; ObjectID = "qDE-tw-wMQ"; */
+"qDE-tw-wMQ.text" = "SET";
+
+/* Class = "UINavigationItem"; title = "Choose Workout"; ObjectID = "tW7-kt-S0G"; */
+"tW7-kt-S0G.title" = "Välj Övning";
+
+/* Class = "UIButton"; normalTitle = "NEXT"; ObjectID = "wgz-RU-dEQ"; */
+"wgz-RU-dEQ.normalTitle" = "NÄSTA";
+
+/* Class = "UILabel"; text = "1"; ObjectID = "zg2-88-ihE"; */
+"zg2-88-ihE.text" = "1";

@@ -17,7 +17,7 @@ class TableViewCell: UITableViewCell {
     func setWorkout(video: DataInfo)
     {
         imgWorkout.image = video.image
-        workoutLabel.text = video.title
+        workoutLabel.text = video.title?.localized
         
     }
     

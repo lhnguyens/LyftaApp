@@ -22,7 +22,7 @@ class StartWorkoutCell : UITableViewCell {
     @IBOutlet weak var checkBoxButton: UIButton!
     
     func setStructureForExcersise(data: Exercises){
-        labelForEachExcersise.text = data.name
+        labelForEachExcersise.text = data.name.localized
         repsRangeLabel.text = data.reps
         setsLabel.text = "SETS"
         repsLabel.text = "REPS"

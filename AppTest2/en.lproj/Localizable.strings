@@ -1,0 +1,58 @@
+/* 
+  Localizable.strings
+  AppTest2
+
+  Created by Luan Nguyen on 2019-02-20.
+  Copyright © 2019 Luan Nguyen. All rights reserved.
+*/
+
+
+//Rutin
+
+"Push Workout" = "Push Workout";
+"Pull Workout" = "Pull Workout";
+"Leg Workout" = "Leg Workout";
+
+
+
+//Push
+
+"Barbell Bench Press" = "Barbell Bench Press";
+"Dumbell Seated Shoulder Press" = "Dumbell Seated Shoulder Press";
+"Weighted Dip" = "Weighted Dip";
+"Low-to-high Cable Flye" = "Low-to-high Cable Flye";
+"Dumbell Isolateral Skull Crusher" = "Dumbell Isolateral Skull Crusher";
+"Dumbell Lateral Raise" = "Dumbell Lateral Raise";
+"Ab Wheel Rollout" = "Ab Wheel Rollout";
+
+
+//Pull
+
+"1 Arm Lat Pull-in" = "1 Arm Lat Pull-in";
+"Pull-up" = "Pull-up";
+"Pendlay Row" = "Pendlay Row";
+"Machine High Row" = "Machine High Row";
+"Seated Face Pull" = "Seated Face Pull";
+"Reverse Grip Ez Bar Curl" = "Reverse Grip Ez Bar Curl";
+"Supinated Ez Bar Curl" = "Supinated Ez Bar Curl";
+"Dumbell Preacher Curl" = "Dumbell Preacher Curl";
+
+
+//Legs
+
+"Back Squat" = "Back Squat";
+"Deadlift" = "Deadlift";
+"Barbell Hip Thrust" = "Barbell Hip Thrust";
+"Dumbell Walking Lunge" = "Dumbell Walking Lunge";
+"Leg Extension" = "Leg Extension";
+"Seated Leg Curl" = "Seated Leg Curl";
+"Standing Calf Raises" = "Standing Calf Raises";
+
+
+
+
+
+
+
+
+
