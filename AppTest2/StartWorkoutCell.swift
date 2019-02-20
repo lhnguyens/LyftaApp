@@ -27,6 +27,7 @@ class StartWorkoutCell : UITableViewCell {
         setsLabel.text = "SETS"
         repsLabel.text = "REPS"
         whichSets.text = data.sets
+        checkBoxButton.isSelected = data.checked
         setLabelToWhite()
         
         
@@ -35,6 +36,8 @@ class StartWorkoutCell : UITableViewCell {
     func setLabelToWhite() {
         labelForEachExcersise.textColor = UIColor.white
     }
+    
+
     
     
     

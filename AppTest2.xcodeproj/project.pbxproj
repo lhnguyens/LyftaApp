@@ -135,10 +135,10 @@
 				0FA1B2BC21FB4F0200ED7988 /* DataInfo.swift */,
 				0FDC880E2209BD2D00F17E99 /* WorkoutInfo.swift */,
 				0F72CF1C21F48610008DDFE8 /* PplButton.swift */,
-				0F442B3621F0BC00003A2A5A /* Info.plist */,
 				0F442B2A21F0BBFF003A2A5A /* AppDelegate.swift */,
 				0F86568A221D296D000882E2 /* Localizable.strings */,
 				0F86568C221D3974000882E2 /* String.swift */,
+				0F442B3621F0BC00003A2A5A /* Info.plist */,
 			);
 			path = AppTest2;
 			sourceTree = "<group>";

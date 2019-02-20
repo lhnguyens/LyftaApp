@@ -36,7 +36,7 @@
                                     <constraint firstAttribute="width" constant="250" id="Uwt-HY-TOV"/>
                                 </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Workout Tracker" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gQG-Fh-c09">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Workout Under Control" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gQG-Fh-c09">
                                 <rect key="frame" x="40" y="391" width="295" height="76"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="76" id="Kkv-Kj-aeC"/>
@@ -168,41 +168,46 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RVU-1j-sp4" customClass="PplButton" customModule="AppTest2" customModuleProvider="target">
-                                <rect key="frame" x="37" y="604" width="301" height="40"/>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RVU-1j-sp4" customClass="PplButton" customModule="AppTest2" customModuleProvider="target">
+                                <rect key="frame" x="87" y="554" width="200" height="59"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="59" id="386-rf-MkO"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name="Futura-Bold" family="Futura" pointSize="21"/>
                                 <state key="normal" title="Start Lifting!"/>
                                 <connections>
                                     <segue destination="aae-R6-m2x" kind="show" identifier="start" id="TyB-pB-FHs"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="l5g-dq-fiQ">
-                                <rect key="frame" x="0.0" y="206" width="375" height="346"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" secondItem="l5g-dq-fiQ" secondAttribute="height" multiplier="375:346" id="Eve-LW-Hb4"/>
-                                </constraints>
-                            </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="OVERVIEW" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5y9-Jg-HWY">
                                 <rect key="frame" x="0.0" y="100" width="375" height="71"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="71" id="hS1-AJ-LI0"/>
+                                    <constraint firstAttribute="height" constant="71" id="lup-1k-LBd"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="Futura-CondensedExtraBold" family="Futura" pointSize="28"/>
                                 <color key="textColor" red="0.85706728700000001" green="0.19883149859999999" blue="0.33333057170000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="l5g-dq-fiQ">
+                                <rect key="frame" x="0.0" y="206" width="375" height="293"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="293" id="B3q-uQ-xML"/>
+                                    <constraint firstAttribute="width" constant="375" id="EPA-o5-AIx"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="RVU-1j-sp4" firstAttribute="centerX" secondItem="l5g-dq-fiQ" secondAttribute="centerX" id="EBB-hS-kPb"/>
-                            <constraint firstItem="5y9-Jg-HWY" firstAttribute="top" secondItem="hCM-h7-jjE" secondAttribute="top" constant="12" id="RTC-iI-ODd"/>
-                            <constraint firstItem="l5g-dq-fiQ" firstAttribute="top" secondItem="5y9-Jg-HWY" secondAttribute="bottom" constant="35" id="S1C-1n-0ax"/>
-                            <constraint firstItem="5y9-Jg-HWY" firstAttribute="trailing" secondItem="l5g-dq-fiQ" secondAttribute="trailing" id="Skt-1R-pYY"/>
-                            <constraint firstItem="l5g-dq-fiQ" firstAttribute="leading" secondItem="hCM-h7-jjE" secondAttribute="leading" id="cNg-Eb-NTo"/>
-                            <constraint firstItem="l5g-dq-fiQ" firstAttribute="trailing" secondItem="hCM-h7-jjE" secondAttribute="trailing" id="dAY-1s-x8V"/>
-                            <constraint firstItem="RVU-1j-sp4" firstAttribute="leading" secondItem="hCM-h7-jjE" secondAttribute="leading" constant="37" id="e9W-dF-wa8"/>
-                            <constraint firstItem="RVU-1j-sp4" firstAttribute="top" secondItem="l5g-dq-fiQ" secondAttribute="bottom" constant="52" id="snU-r0-EI8"/>
-                            <constraint firstItem="5y9-Jg-HWY" firstAttribute="leading" secondItem="l5g-dq-fiQ" secondAttribute="leading" id="xGH-fV-uKZ"/>
+                            <constraint firstItem="l5g-dq-fiQ" firstAttribute="centerX" secondItem="RVU-1j-sp4" secondAttribute="centerX" id="4kh-JG-eAw"/>
+                            <constraint firstAttribute="trailing" secondItem="l5g-dq-fiQ" secondAttribute="trailing" id="LwE-AE-zc8"/>
+                            <constraint firstItem="5y9-Jg-HWY" firstAttribute="trailing" secondItem="l5g-dq-fiQ" secondAttribute="trailing" id="OBx-Dh-z63"/>
+                            <constraint firstItem="hCM-h7-jjE" firstAttribute="bottom" secondItem="RVU-1j-sp4" secondAttribute="bottom" constant="165" id="XvJ-cC-0pc"/>
+                            <constraint firstItem="RVU-1j-sp4" firstAttribute="leading" secondItem="hCM-h7-jjE" secondAttribute="leading" constant="87" id="Y6k-qa-xww"/>
+                            <constraint firstItem="RVU-1j-sp4" firstAttribute="top" secondItem="l5g-dq-fiQ" secondAttribute="bottom" constant="55" id="a1k-Th-Kb1"/>
+                            <constraint firstItem="l5g-dq-fiQ" firstAttribute="top" secondItem="5y9-Jg-HWY" secondAttribute="bottom" constant="35" id="pgP-wu-uSh"/>
+                            <constraint firstItem="l5g-dq-fiQ" firstAttribute="leading" secondItem="vX4-JD-RLf" secondAttribute="leading" id="s1Y-Ag-YzO"/>
+                            <constraint firstItem="5y9-Jg-HWY" firstAttribute="leading" secondItem="l5g-dq-fiQ" secondAttribute="leading" id="t4q-oc-jBR"/>
+                            <constraint firstItem="5y9-Jg-HWY" firstAttribute="top" secondItem="hCM-h7-jjE" secondAttribute="top" constant="12" id="y3o-9u-mMJ"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="hCM-h7-jjE"/>
                     </view>

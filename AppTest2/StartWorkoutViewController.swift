@@ -45,11 +45,12 @@ class StartWorkoutViewController: UIViewController, UITableViewDataSource, UITab
         if let data = data1 {
             cell1.setStructureForExcersise(data: data)
             cell1.selectionStyle = .none
-            cell1.checkBoxButton.addTarget(self, action: #selector(checkMarkButtonClicked(sender: )), for: .touchUpInside)
+            cell1.checkBoxButton.tag = indexPath.row
+            cell1.checkBoxButton.addTarget(self, action: #selector(checkMarkButtonClicked(sender: )), for: .touchUpInside)            
         }
-        print("Cell")
         
         return cell1
+        
         
     }
     
@@ -59,31 +60,24 @@ class StartWorkoutViewController: UIViewController, UITableViewDataSource, UITab
     }
     
     @objc func checkMarkButtonClicked (sender: UIButton) {
-        //Testa button om den registeras
-        print("button pressed")
         
         UIView.animate(withDuration: 0.3, delay: 0.1, options: .curveEaseInOut, animations: {
             sender.transform = CGAffineTransform(scaleX: 0.1, y: 0.1)
         }) { (success) in
+            
+            self.dataOfExcersises?.exerC?[sender.tag].checked = !(self.dataOfExcersises?.exerC?[sender.tag].checked)!
             sender.isSelected = !sender.isSelected
             UIView.animate(withDuration: 0.3, delay: 0.1, options: .curveEaseInOut, animations: {
                 sender.transform = .identity
             }, completion: nil)
         }
-        
-//        if sender.isSelected {
-//            sender.isSelected = false
-//        } else {
-//            sender.isSelected = true
-//        }
     }
     
-    
-    
-    
-    
-    
-    
-    
 }
+
+
+
+
+
+
 
