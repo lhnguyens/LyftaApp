@@ -8,7 +8,7 @@
 
 import UIKit
 
-class StartWorkoutCell : UITableViewCell {
+class StartWorkoutCell : UITableViewCell{
     
     
     @IBOutlet weak var labelForEachExcersise: UILabel!
@@ -29,6 +29,7 @@ class StartWorkoutCell : UITableViewCell {
         whichSets.text = data.sets
         checkBoxButton.isSelected = data.checked
         setLabelToWhite()
+
         
         
     }
@@ -36,6 +37,10 @@ class StartWorkoutCell : UITableViewCell {
     func setLabelToWhite() {
         labelForEachExcersise.textColor = UIColor.white
     }
+    
+
+    
+
     
 
     
