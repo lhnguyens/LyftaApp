@@ -66,8 +66,6 @@ class MenuController: UIViewController, UITableViewDataSource,UITableViewDelegat
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         
-        //  let arrayTable = imagesMenu
-        
         if segue.identifier == "segueToOverview"{
             if let destVC = segue.destination as? WorkoutViewController {
                 destVC.dataInfo =  imagesMenu[myIndex]
